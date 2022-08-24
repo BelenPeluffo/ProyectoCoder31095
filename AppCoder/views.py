@@ -11,4 +11,7 @@ def curso(request):
         'curso':curso1,
     }
 
-    return render(request,'template_0.html',contexto)
+    return render(request,'AppCoder/template_0.html',contexto)
+
+def inicio(request):
+    return render(request,'index.html')

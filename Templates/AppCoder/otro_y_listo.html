@@ -1,0 +1,14 @@
+<!--ÉSTE SERÁ UN ARCHIVO-HIJX DE INDEX.HTML-->
+{% extends 'index.html' %}
+
+<!--ACÁ VA LA MODIFICACIÓN-->
+{% block title %}
+    Curso
+{% endblock %}
+
+{% block inicio %}
+    ESte es mi curso, versión 2.0.
+    <br>
+    <!-- CÓMO SE ACCEDE A ATRIBUTOS DE CLASE:-->
+    <strong>Curso</strong>: {{curso.nombre}} | <strong>Comisión</strong>: {{curso.camada}}
+{% endblock%}

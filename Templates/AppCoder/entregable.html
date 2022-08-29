@@ -1,0 +1,21 @@
+<!--ÉSTE SERÁ UN ARCHIVO-HIJX DE INDEX.HTML-->
+{% extends 'index.html' %}
+
+<!--ACÁ VA LA MODIFICACIÓN-->
+{% block title %}
+    Entregable
+{% endblock %}
+
+{% block inicio %}
+    Este es un registro de entregable.
+    <br>
+    <!-- CÓMO SE ACCEDE A ATRIBUTOS DE CLASE
+        ALGO A RECORDAR:
+        lo que se envía por contexto es un DICCIONARIO que
+        tiene una única KEY, en este caso es 'entregable',
+        pero en el caso de otro_y_listo.html, es 'curso'
+        BE CAREFUL-->
+    <b>Nombre</b>: {{entregable.nombre}} | 
+    <b>Fecha de Entrega</b>: {{entregable.fecha_de_entrega}} | 
+    <b>¿Entregado?</b>: {{entregable.entregado}}
+{% endblock%}
